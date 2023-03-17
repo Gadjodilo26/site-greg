@@ -5,11 +5,14 @@
   padding: 0;
   opacity: 1;
   font-family: 'Bona Nova', serif;
-  background-color: black;
-  color: aliceblue;
+
 }
 
 @media screen and (max-width: 980px) {
+  body {
+    background-color: black;
+    color: aliceblue;
+  }
 
   /* En tête */
 
@@ -45,15 +48,145 @@
   /* Contenu page principal*/
 
   section {
+    position: relative;
     display: flex;
     flex-direction: column;
 
   }
 
   .picture {
+    margin-top: 15px;
+    margin-bottom: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
 
+  }
+
+  p {
+    width: 95%;
+    text-align: justify;
+    margin: auto;
+    margin-top: 30px;
+    font-size: large;
+  }
+
+  .grid {
+    margin: auto;
+    margin-top: 60px;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 95%;
+
+  }
+
+  .diapo {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: auto;
+
+  }
+
+  .diapo img {
+    width: 100%;
+    height: auto
+  }
+
+  .Avent {
+    margin-top: 50px;
+
+
+  }
+
+  .ListAvent {
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    width: 95%;
+    height: 100px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  li {
+    text-decoration: none;
+    list-style-type: none;
+    line-height: 26px;
+  }
+
+  a {
+    text-decoration: none;
+    color: aliceblue;
+
+  }
+
+  a:hover {
+    color: gold;
+
+  }
+
+
+
+  h2 {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  h3 {
+    width: 200px;
+
+  }
+
+  /*pied de page*/
+
+
+  footer {
+    border-top: 1px solid aliceblue;
+    margin-top: 50px;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    background: rgb(9, 9, 9);
+    background: linear-gradient(90deg, rgba(9, 9, 9, 1) 0%, rgba(76, 76, 77, 0.9164040616246498) 49%, rgba(80, 82, 82, 1) 100%);
+  }
+
+  .nav {
+    position: relative;
+    width: 25%;
+    height: 100%;
+
+  }
+
+  .nav ul {
+    display: flex;
+    flex-flow: column;
+    margin-top: 15px;
+    align-items: center;
+  }
+
+  .card {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+
+  }
+
+  .contact {
+    width: 25%;
+    height: 100%;
+
+  }
+
+  .contact ul {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
   }
 }
