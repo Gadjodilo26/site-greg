@@ -8,20 +8,41 @@
 
 }
 
+/*-----------------------------VERSION MOBILE----------------------*/
+
+
+
+body {
+  background-color: black;
+  color: aliceblue;
+}
+
+main {
+  position: relative;
+
+}
+
+.title {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.background {
+  display: flex;
+  justify-content: center;
+}
+
 @media screen and (max-width: 980px) {
-  body {
-    background-color: black;
-    color: aliceblue;
-  }
+
 
   /* En tête */
 
-  .title {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 
-  }
+
+
 
   .title img {
     max-width: 25%;
@@ -40,10 +61,6 @@
 
   }
 
-  .background {
-    display: flex;
-    justify-content: center;
-  }
 
   /* Contenu page principal*/
 
@@ -189,4 +206,196 @@
     flex-flow: column;
     align-items: center;
   }
+}
+
+/*--------------------------------------------VERSION PC---------------*/
+
+
+
+@media screen and (min-width: 980px) {
+
+  /* En tête */
+
+
+  .title img {
+
+    width: 200px;
+    height: auto;
+    max-width: 35%;
+    margin-top: 10px;
+
+  }
+
+  h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    font-size: 80px;
+
+  }
+
+  .content {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+
+
+  }
+
+  .picture {
+    display: flex;
+    position: relative;
+    top: 40px;
+    left: 80px;
+
+
+  }
+
+  p {
+    width: 95%;
+    text-align: justify;
+    margin: auto;
+    margin-top: 30px;
+    font-size: x-large;
+  }
+
+  .grid {
+    margin: auto;
+    margin-top: 120px;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 80%;
+
+  }
+
+  .diapo {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: auto;
+
+  }
+
+  .diapo img {
+    width: 80%;
+    height: auto
+  }
+
+  .Avent {
+    display: flex;
+    flex-flow: row;
+    margin-top: 150px;
+
+  }
+
+  .Avent ul {
+
+    width: 40%;
+  }
+
+
+  .ListAvent {
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    width: 95%;
+    height: 100px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  li {
+    text-decoration: none;
+    list-style-type: none;
+    line-height: 26px;
+  }
+
+  a {
+    text-decoration: none;
+    color: aliceblue;
+
+  }
+
+  a:hover {
+    color: gold;
+
+  }
+
+
+
+  .AventText h2 {
+    text-align: center;
+    margin-top: 0px;
+  }
+
+  h3 {
+    width: 200px;
+
+  }
+
+  .AventText {
+    width: 60%;
+  }
+
+  .AventText p {
+
+    width: 95%;
+  }
+
+  /*pied de page*/
+
+
+  footer {
+    border-top: 1px solid aliceblue;
+    margin-top: 50px;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    background: rgb(9, 9, 9);
+    background: linear-gradient(90deg, rgba(9, 9, 9, 1) 0%, rgba(76, 76, 77, 0.9164040616246498) 49%, rgba(80, 82, 82, 1) 100%);
+  }
+
+  .nav {
+    position: relative;
+    width: 25%;
+    height: 100%;
+
+  }
+
+  .nav ul {
+    display: flex;
+    flex-flow: column;
+    margin-top: 15px;
+    align-items: center;
+  }
+
+  .card {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+
+  }
+
+  .contact {
+    width: 25%;
+    height: 100%;
+
+  }
+
+  .contact ul {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+
 }

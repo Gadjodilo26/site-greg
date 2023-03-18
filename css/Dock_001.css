@@ -31,23 +31,23 @@
 
 
     --001-img-size-width: auto;
-    --001-img-size-height:40px;
+    --001-img-size-height:50px;
     
     /*-----------------------------------*/
     /*-----------------------------------
     -----------------------------------*/
     /* config dock*/
-
+    
     --001-dock-width: 100%;
-    --001-dock-margin-top: none;
     --001-dock-height: 80px;
+    --001-dock-background: black;
+    --001-dock-border: none;
+    /*-----------------------------------
+    --001-dock-radius: none;
+    --001-dock-margin-top: none;
     --001-dock-margin-right: none;
     --001-dock-margin-left: none;
     --001-dock-margin-bottom: none;
-    --001-dock-border: none;
-    --001-dock-radius: none;
-    --001-dock-background: none;
-    /*-----------------------------------
     -----------------------------------*/
 
     /* config button*/
@@ -84,23 +84,23 @@
 
 
     /*-----------------------------------*/
-    /*-----------------------------------
     --001-img-size-width: auto;
     --001-img-size-height:75px;
+    /*-----------------------------------
     
     -----------------------------------*/
     /* config dock*/
 
+    --001-dock-border: none;
+    --001-dock-background: black;
+    --001-dock-width: 100%;
     /*-----------------------------------
-    --001-dock-width: none;
     --001-dock-height: none;
     --001-dock-margin-right: none;
 --001-dock-margin-left: none;
 --001-dock-margin-top: none;
 --001-dock-margin-bottom: none;
---001-dock-border: none;
 --001-dock-radius: none;
---001-dock-background: none;
 -----------------------------------*/
 
     /* config button*/
@@ -134,10 +134,14 @@
 
 
 .dock_001 {
+  position: sticky;
+  top: 0;
   display: flex;
   flex-flow: row;
   justify-content: space-around;
   align-items: center;
+  z-index:2;
+  
 
   width: var(--001-dock-width, 90%);
   height: var(--001-dock-height, 100px);
@@ -155,7 +159,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+ 
 
   height: var(--001-button-height, 100%);
   width: var(--001-button-width, 100%);
@@ -180,7 +184,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+ 
 }
 
 .img_001 {
@@ -189,7 +193,7 @@
   align-items: center;
   width: 100%;
   Height: 100%;
-  position: relative;
+ 
 }
 
 .unhover_001 {
