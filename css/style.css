@@ -45,6 +45,8 @@ main {
 
 
   .title img {
+    width: 150px;
+    height: auto;
     max-width: 25%;
     margin-top: 10px;
     max-height: 100px;
@@ -54,7 +56,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 75%;
+    width: 100%;
     text-align: center;
     height: 100px;
     font-size: 35px;
@@ -68,6 +70,13 @@ main {
     position: relative;
     display: flex;
     flex-direction: column;
+
+  }
+
+  .content {
+    background-image: url(../lib/png/photo/terrasse.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
 
   }
 
@@ -89,6 +98,9 @@ main {
   }
 
   .grid {
+    background-image: url(../lib/png/photo/PanierLegumes.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
     margin: auto;
     margin-top: 60px;
     position: relative;
@@ -153,11 +165,26 @@ main {
   h2 {
     text-align: center;
     margin-top: 50px;
+
+
+
   }
 
   h3 {
     width: 200px;
 
+  }
+
+  .AventText {
+    background: rgb(214, 159, 38);
+    background: linear-gradient(90deg, rgba(214, 159, 38, 1) 0%, rgba(182, 92, 23, 1) 47%, rgba(207, 128, 16, 1) 100%);
+    border: 1px solid aliceblue;
+    border-radius: 12px;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 20px;
+    opacity: 0.80;
+    font-size: x-large;
   }
 
   /*pied de page*/
@@ -237,6 +264,9 @@ main {
   }
 
   .content {
+    background-image: url(../lib/png/photo/terrasse.png);
+    background-size: 100%;
+
     position: relative;
     display: flex;
     flex-direction: row;
@@ -246,16 +276,18 @@ main {
   }
 
   .picture {
+    height: 78%;
+    width: auto;
     display: flex;
     position: relative;
-    top: 40px;
-    left: 80px;
+    top: 20px;
+    left: 35px;
 
 
   }
 
   p {
-    width: 95%;
+    width: 80%;
     text-align: justify;
     margin: auto;
     margin-top: 30px;
@@ -263,13 +295,16 @@ main {
   }
 
   .grid {
+    background-image: url(../lib/png/photo/PanierLegumes.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
     margin: auto;
     margin-top: 120px;
     position: relative;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
-    width: 80%;
+    justify-content: space-around;
+    width: 100%;
 
   }
 
@@ -289,11 +324,21 @@ main {
   }
 
   .Avent {
+
+    background: rgb(214, 159, 38);
+    background: linear-gradient(90deg, rgba(214, 159, 38, 1) 0%, rgba(182, 92, 23, 1) 47%, rgba(207, 128, 16, 1) 100%);
     display: flex;
     flex-flow: row;
-    margin-top: 150px;
-
+    margin: auto;
+    margin-top: 50px;
+    border: 1px solid aliceblue;
+    border-radius: 12px;
+    width: 90%;
+    opacity: 0.80;
+    ;
   }
+
+
 
   .Avent ul {
 
@@ -316,11 +361,13 @@ main {
     text-decoration: none;
     list-style-type: none;
     line-height: 26px;
+    font-size: large;
   }
 
   a {
     text-decoration: none;
     color: aliceblue;
+
 
   }
 
@@ -332,6 +379,7 @@ main {
 
 
   .AventText h2 {
+
     text-align: center;
     margin-top: 0px;
   }
@@ -342,7 +390,9 @@ main {
   }
 
   .AventText {
+    margin: 40px 40px;
     width: 60%;
+    font-size: 35px;
   }
 
   .AventText p {
@@ -356,7 +406,7 @@ main {
   footer {
     border-top: 1px solid aliceblue;
     margin-top: 50px;
-    height: 100px;
+    height: 150px;
     width: 100%;
     display: flex;
     flex-flow: row;
@@ -375,7 +425,14 @@ main {
     display: flex;
     flex-flow: column;
     margin-top: 15px;
+    justify-content: space-around;
     align-items: center;
+  }
+
+  .nav ul li {
+    height: 40px;
+    font-size: x-large;
+
   }
 
   .card {
