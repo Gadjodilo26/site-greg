@@ -1,0 +1,19 @@
+#menu {
+
+  display: flex;
+  flex-flow: row;
+  justify-content: center; 
+  
+  
+  }
+#menu1 {
+  width: 48%;
+  height: auto;
+}
+#menu2 {
+  
+  width:48%; 
+  height:auto;
+  
+
+}  

@@ -31,19 +31,19 @@
 
 
     --001-img-size-width: auto;
-    --001-img-size-height:50px;
-    
+    --001-img-size-height: 50px;
+
     /*-----------------------------------*/
     /*-----------------------------------
     -----------------------------------*/
     /* config dock*/
-    
+
     --001-dock-width: 100%;
     --001-dock-height: 80px;
-    --001-dock-background: black;
-    --001-dock-border: none;
-    /*-----------------------------------
+    --001-dock-background: #302c28;
+    --001-dock-border: 1px solid aliceblue;
     --001-dock-radius: none;
+    /*-----------------------------------
     --001-dock-margin-top: none;
     --001-dock-margin-right: none;
     --001-dock-margin-left: none;
@@ -85,22 +85,22 @@
 
     /*-----------------------------------*/
     --001-img-size-width: auto;
-    --001-img-size-height:75px;
+    --001-img-size-height: 75px;
     /*-----------------------------------
     
     -----------------------------------*/
     /* config dock*/
 
-    --001-dock-border: none;
-    --001-dock-background: black;
+    --001-dock-border: 1px solid aliceblue;
+    --001-dock-background: rgb(99, 97, 95);
     --001-dock-width: 100%;
+    --001-dock-radius: none;
     /*-----------------------------------
     --001-dock-height: none;
     --001-dock-margin-right: none;
 --001-dock-margin-left: none;
 --001-dock-margin-top: none;
 --001-dock-margin-bottom: none;
---001-dock-radius: none;
 -----------------------------------*/
 
     /* config button*/
@@ -123,8 +123,8 @@
 --001-U-margin-right: none;
 --001-U-margin-bottom: none;
 -----------------------------------*/
---001-U-margin-top: 0;
---001-U-margin-left: 0;
+    --001-U-margin-top: 0;
+    --001-U-margin-left: 0;
 
   }
 
@@ -140,8 +140,8 @@
   flex-flow: row;
   justify-content: space-around;
   align-items: center;
-  z-index:2;
-  
+  z-index: 2;
+
 
   width: var(--001-dock-width, 90%);
   height: var(--001-dock-height, 100px);
@@ -149,9 +149,11 @@
   margin-left: var(--001-dock-margin-left);
   margin-top: var(--001-dock-margin-top);
   margin-bottom: var(--001-dock-margin-bottom);
-  border: var(--001-dock-border, 2px solid black);
+  border-bottom: var(--001-dock-border, 2px solid black);
   border-radius: var(--001-dock-radius, 15px);
   background: var(--001-dock-background, rgba(0, 0, 0, 0.322));
+  background: linear-gradient(90deg, rgba(99, 97, 95, 1) 0%, rgba(48, 44, 40, 1) 47%, rgba(99, 97, 95, 1) 100%);
+  ;
 }
 
 .button_001 {
@@ -159,7 +161,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
- 
+
 
   height: var(--001-button-height, 100%);
   width: var(--001-button-width, 100%);
@@ -184,7 +186,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
- 
+
 }
 
 .img_001 {
@@ -193,7 +195,7 @@
   align-items: center;
   width: 100%;
   Height: 100%;
- 
+
 }
 
 .unhover_001 {

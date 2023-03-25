@@ -13,7 +13,7 @@
 
 
 body {
-  background-color: black;
+  background-color: #302c28;
   color: aliceblue;
 }
 
@@ -30,9 +30,27 @@ main {
 
 }
 
+
 .background {
   display: flex;
   justify-content: center;
+}
+
+.content {
+  background-image: url(../lib/png/photo/terrasse.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+}
+
+footer {
+  background: rgb(99, 97, 95);
+  background: linear-gradient(90deg, rgba(99, 97, 95, 1) 0%, rgba(48, 44, 40, 1) 47%, rgba(99, 97, 95, 1) 100%);
+}
+
+#SVGfoot {
+  width: auto;
+  height: 100%;
 }
 
 @media screen and (max-width: 980px) {
@@ -41,6 +59,11 @@ main {
   /* En tête */
 
 
+
+  #SVGhead {
+    width: auto;
+    height: 120px;
+  }
 
 
 
@@ -73,12 +96,6 @@ main {
 
   }
 
-  .content {
-    background-image: url(../lib/png/photo/terrasse.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-
-  }
 
   .picture {
     margin-top: 15px;
@@ -197,8 +214,7 @@ main {
     width: 100%;
     display: flex;
     flex-flow: row;
-    background: rgb(9, 9, 9);
-    background: linear-gradient(90deg, rgba(9, 9, 9, 1) 0%, rgba(76, 76, 77, 0.9164040616246498) 49%, rgba(80, 82, 82, 1) 100%);
+
   }
 
   .nav {
@@ -243,6 +259,10 @@ main {
 
   /* En tête */
 
+  #SVGhead {
+    width: auto;
+    height: 180px;
+  }
 
   .title img {
 
@@ -410,8 +430,7 @@ main {
     width: 100%;
     display: flex;
     flex-flow: row;
-    background: rgb(9, 9, 9);
-    background: linear-gradient(90deg, rgba(9, 9, 9, 1) 0%, rgba(76, 76, 77, 0.9164040616246498) 49%, rgba(80, 82, 82, 1) 100%);
+
   }
 
   .nav {
@@ -453,6 +472,7 @@ main {
     flex-flow: column;
     align-items: center;
   }
+
 
 
 }
